@@ -2,6 +2,7 @@ package rest_with_spring_boot_and_java.spring.vo;
 import java.io.Serializable;
 
 
+
 public class PersonVO implements Serializable {
     private Long id;
     private String firstName;
