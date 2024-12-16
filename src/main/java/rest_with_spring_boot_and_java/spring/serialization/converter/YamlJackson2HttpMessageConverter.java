@@ -1,0 +1,2 @@
+package rest_with_spring_boot_and_java.spring.serialization.converter;public class YamlJackson2HttpMessageConverter {
+}
