@@ -23,6 +23,7 @@ public class PersonController {
     @Autowired
     private PersonService service;
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}", produces = {MediaType.APPLICATION_JSON
             , MediaType.APPLICATION_XML
             , MediaType.APPLICATION_YAML})
@@ -86,6 +87,7 @@ public class PersonController {
         return service.findAll();
     }
 
+    @CrossOrigin(origins = {"http://localhost:8080", "https://erudio.com.br"})
     @PostMapping(produces = {MediaType.APPLICATION_JSON
             , MediaType.APPLICATION_XML
             , MediaType.APPLICATION_YAML},
