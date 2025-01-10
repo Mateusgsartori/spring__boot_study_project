@@ -18,7 +18,7 @@ public class Mapper {
             BeanUtils.copyProperties(source, target);
             return target;
         } catch (Exception e) {
-            throw new RuntimeException("Erro ao copiar propriedades", e);
+            throw new RuntimeException("Error while copying proprieties", e);
         }
 
     }

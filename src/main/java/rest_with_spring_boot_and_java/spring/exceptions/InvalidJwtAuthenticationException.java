@@ -6,9 +6,9 @@ import org.springframework.security.core.AuthenticationException;
 
 @ResponseStatus(HttpStatus.FORBIDDEN)
 
-public class InvalidJwtAuthenticationExeption extends AuthenticationException {
+public class InvalidJwtAuthenticationException extends AuthenticationException {
 
-    public InvalidJwtAuthenticationExeption(String ex){
+    public InvalidJwtAuthenticationException(String ex){
         super(ex);
     }
 }
